@@ -2,7 +2,7 @@ name = "onebot-status-helper"
 # 默认为 Production 环境
 main = "dist/cloudflare-workers.mjs"
 minify = true
-compatibility_date = "2025-10-31"
+compatibility_date = "2025-10-30"
 compatibility_flags = ["nodejs_compat"]
 assets = { directory = "public" }
 
