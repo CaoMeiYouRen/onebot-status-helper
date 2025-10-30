@@ -46,7 +46,7 @@ app.on(['GET', 'POST'], '/status_forward', async (c) => {
         }
         const respText = await response.text()
         logger.error(`Upstream request failed with status ${response.status}: ${respText}`)
-        return c.json({ action: 'error', message: `Failed with status ${response.status}` }, 400)
+        return c.json({ action: 'error', message: `Failed with status ${response.status}: ${respText}` }, 400)
 
     } catch (error) {
         logger.error(error)
