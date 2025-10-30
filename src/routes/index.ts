@@ -44,10 +44,12 @@ app.on(['GET', 'POST'], '/status_forward', async (c) => {
             }
             return c.json({ action: 'error', message: `Upstream error: ${respData.message || 'Unknown error'}` }, 400)
         }
+        const respText = await response.text()
+        logger.error(`Upstream request failed with status ${response.status}: ${respText}`)
         return c.json({ action: 'error', message: `Failed with status ${response.status}` }, 400)
 
     } catch (error) {
-        console.error(error)
+        logger.error(error)
         return c.json({ action: 'error', message: 'Request failed' }, 400)
     }
 })
