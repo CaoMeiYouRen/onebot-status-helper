@@ -86,4 +86,4 @@ jobs:
           user: ${{ secrets.DOCKER_USERNAME }}
           pass: ${{ secrets.DOCKER_PASSWORD }}
           slug: ${{ github.repository }}
-          description: "基于 Hono 和 TypeScript 的云函数模板"
+          description: "转换onebot的/get_status接口的状态码"
