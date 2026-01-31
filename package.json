@@ -69,7 +69,7 @@
     "rimraf": "^6.1.2",
     "semantic-release": "^25.0.3",
     "semantic-release-cmyr-config": "^1.0.0",
-    "tsdown": "^0.15.11",
+    "tsdown": "^0.20.1",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3",
     "vercel": "^48.6.7",
