@@ -75,7 +75,7 @@
     "vercel": "^50.9.6",
     "vite": "^7.1.12",
     "vitest": "^4.0.18",
-    "wrangler": "^4.61.1"
+    "wrangler": "^4.67.0"
   },
   "config": {},
   "changelog": {
