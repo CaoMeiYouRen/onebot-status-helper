@@ -50,3 +50,4 @@ minimumReleaseAgeExclude:
   - '@vercel/static-build@2.9.32'
   - '@vercel/static-config@3.4.0'
   - vercel@54.5.1
+  - es-toolkit@1.50.0
