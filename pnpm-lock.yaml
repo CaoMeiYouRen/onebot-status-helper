@@ -79,8 +79,8 @@ importers:
         specifier: ^7.12.7
         version: 7.12.7
       '@types/bun':
-        specifier: ^1.3.13
-        version: 1.3.14
+        specifier: ^1.4.0
+        version: 1.4.0
       '@types/debug':
         specifier: ^4.1.13
         version: 4.1.13
@@ -95,7 +95,7 @@ importers:
         version: 26.0.1
       '@vercel/nft':
         specifier: ^1.10.2
-        version: 1.10.2
+        version: 1.10.2(supports-color@10.2.2)
       autocannon:
         specifier: ^8.0.0
         version: 8.0.0
@@ -116,16 +116,16 @@ importers:
         version: 3.3.0(@types/node@26.0.1)(typescript@5.9.3)
       cz-conventional-changelog-cmyr:
         specifier: ^2.0.0
-        version: 2.0.0(@types/node@26.0.1)(commitizen@4.3.2(@types/node@26.0.1)(typescript@5.9.3))(typescript@5.9.3)
+        version: 2.0.0(@types/node@26.0.1)(commitizen@4.3.2(@types/node@26.0.1)(typescript@5.9.3))(supports-color@10.2.2)(typescript@5.9.3)
       debug:
         specifier: ^4.4.3
-        version: 4.4.3
+        version: 4.4.3(supports-color@10.2.2)
       eslint:
         specifier: ^9.39.2
-        version: 9.39.4(jiti@2.6.1)
+        version: 9.39.4(jiti@2.6.1)(supports-color@10.2.2)
       eslint-config-cmyr:
         specifier: ^2.3.1
-        version: 2.3.1(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)
+        version: 2.3.1(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -140,10 +140,10 @@ importers:
         version: 6.1.3
       semantic-release:
         specifier: ^25.0.3
-        version: 25.0.3(typescript@5.9.3)
+        version: 25.0.3(supports-color@10.2.2)(typescript@5.9.3)
       semantic-release-cmyr-config:
         specifier: ^1.0.2
-        version: 1.0.2(semantic-release@25.0.3(typescript@5.9.3))
+        version: 1.0.2(semantic-release@25.0.3(supports-color@10.2.2)(typescript@5.9.3))(supports-color@10.2.2)
       tsdown:
         specifier: ^0.22.3
         version: 0.22.3(tsx@4.22.4)(typescript@5.9.3)
@@ -155,7 +155,7 @@ importers:
         version: 5.9.3
       vercel:
         specifier: ^54.5.1
-        version: 54.5.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)
+        version: 54.5.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(supports-color@10.2.2)
       vite:
         specifier: ^8.1.5
         version: 8.1.5(@types/node@26.0.1)(esbuild@0.25.12)(jiti@2.6.1)(tsx@4.22.4)(yaml@2.9.0)
@@ -1689,8 +1689,8 @@ packages:
   '@types/aws-lambda@8.10.161':
     resolution: {integrity: sha512-rUYdp+MQwSFocxIOcSsYSF3YYYC/uUpMbCY/mbO21vGqfrEYvNSoPyKYDj6RhXXpPfS0KstW9RwG3qXh9sL7FQ==}
 
-  '@types/bun@1.3.14':
-    resolution: {integrity: sha512-h1hFqFVcvAvD9j9K7ZW7vd82aSA+rTdznZa+5bwvCwqSB1jmmfLcbIWhOLx1/+boy/xmjgCs/OMUL8hRJSmnPw==}
+  '@types/bun@1.4.0':
+    resolution: {integrity: sha512-K+lZULY23vRgK/CfTjFIV+tyifaNdSMlPh9j+6mQ/cLfpOznLyAuzgV/JQysyECpkBQLVMSyvjlr2fBUSA9wFQ==}
 
   '@types/chai@5.2.3':
     resolution: {integrity: sha512-Mw558oeA9fFbv65/y4mHtXDs9bPnFMZAL/jxdPFUpOHHIXX91mcgEHbS5Lahr+pwZFR8A7GQleRWeI6cGFC2UA==}
@@ -1745,6 +1745,9 @@ packages:
 
   '@types/node@26.0.1':
     resolution: {integrity: sha512-fc3KiUoBt6kie0N9bIW3E47vZsuaMf0PM2AaUpLCLT0s/LvX1nxAim6Fc049cNxODPpGm6qRAuUOB86SkRuPQw==}
+
+  '@types/node@26.4.0':
+    resolution: {integrity: sha512-faiGnoIrLH/V8cibOMEAZ8pMw6oXqSukl29ra4mN8GdaB2ZewzeaLj+INpV5N+Z1eKWzY+IzaIZH2EIR6YZRNQ==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2213,8 +2216,8 @@ packages:
   buffer@5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
 
-  bun-types@1.3.14:
-    resolution: {integrity: sha512-4N0ig0fEomHt5R0KCFWjovxow98rIoRwKolrYdCcknNwMekCXRnWEUvgu5soYV8QXtVsrUD8B95MBOZGPvr6KQ==}
+  bun-types@1.4.0:
+    resolution: {integrity: sha512-iIKw23BspnQQYd3prITOBxeUsxBHnwzX6YJfGMuNOZzeNcMmVqzIIVGRm1l69ogaPQmb4wB6BN8mA5bE9YuC5Q==}
 
   bytes@3.1.0:
     resolution: {integrity: sha512-zauLjrfCG+xvoyaqLoV8bLVXXNGC4JqlxFCutSDWA6fJrTo2ZuvLYTqZ7aHBLZSMOopbzwv8f+wZcVzfVTI2Dg==}
@@ -2871,6 +2874,7 @@ packages:
   eslint@9.39.4:
     resolution: {integrity: sha512-XoMjdBOwe/esVgEvLmNsD3IRHkm7fbKIUGvrleloJXUZgDHig2IPWNniv+GwjyJXzuNqVjlr5+4yVUZjycJwfQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -6368,17 +6372,17 @@ snapshots:
   '@esbuild/win32-x64@0.25.12':
     optional: true
 
-  '@eslint-community/eslint-utils@4.9.1(eslint@9.39.4(jiti@2.6.1))':
+  '@eslint-community/eslint-utils@4.9.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))':
     dependencies:
-      eslint: 9.39.4(jiti@2.6.1)
+      eslint: 9.39.4(jiti@2.6.1)(supports-color@10.2.2)
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/regexpp@4.12.2': {}
 
-  '@eslint/config-array@0.21.2':
+  '@eslint/config-array@0.21.2(supports-color@10.2.2)':
     dependencies:
       '@eslint/object-schema': 2.1.7
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       minimatch: 10.2.5
     transitivePeerDependencies:
       - supports-color
@@ -6391,10 +6395,10 @@ snapshots:
     dependencies:
       '@types/json-schema': 7.0.15
 
-  '@eslint/eslintrc@3.3.5':
+  '@eslint/eslintrc@3.3.5(supports-color@10.2.2)':
     dependencies:
       ajv: 6.15.0
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       espree: 10.4.0
       globals: 14.0.0
       ignore: 5.3.2
@@ -6579,30 +6583,30 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@lint-md/core@2.0.0':
+  '@lint-md/core@2.0.0(supports-color@10.2.2)':
     dependencies:
-      '@lint-md/parser': 0.0.14
+      '@lint-md/parser': 0.0.14(supports-color@10.2.2)
       lodash: 4.18.1
     transitivePeerDependencies:
       - supports-color
 
-  '@lint-md/parser@0.0.14':
+  '@lint-md/parser@0.0.14(supports-color@10.2.2)':
     dependencies:
       '@types/unist': 2.0.11
       mdast-util-gfm-autolink-literal: 1.0.3
-      remark: 14.0.2
-      remark-directive: 2.0.1
+      remark: 14.0.2(supports-color@10.2.2)
+      remark-directive: 2.0.1(supports-color@10.2.2)
       remark-frontmatter: 4.0.1
-      remark-gfm: 3.0.1
+      remark-gfm: 3.0.1(supports-color@10.2.2)
       remark-math: 5.1.1
     transitivePeerDependencies:
       - supports-color
 
-  '@mapbox/node-pre-gyp@2.0.3':
+  '@mapbox/node-pre-gyp@2.0.3(supports-color@10.2.2)':
     dependencies:
       consola: 3.4.2
       detect-libc: 2.1.2
-      https-proxy-agent: 7.0.6
+      https-proxy-agent: 7.0.6(supports-color@10.2.2)
       node-fetch: 2.7.0
       nopt: 8.1.0
       semver: 7.8.5
@@ -7049,25 +7053,25 @@ snapshots:
 
   '@sec-ant/readable-stream@0.4.1': {}
 
-  '@semantic-release/changelog@6.0.3(semantic-release@25.0.3(typescript@5.9.3))':
+  '@semantic-release/changelog@6.0.3(semantic-release@25.0.3(supports-color@10.2.2)(typescript@5.9.3))':
     dependencies:
       '@semantic-release/error': 3.0.0
       aggregate-error: 3.1.0
       fs-extra: 11.3.6
       lodash: 4.18.1
-      semantic-release: 25.0.3(typescript@5.9.3)
+      semantic-release: 25.0.3(supports-color@10.2.2)(typescript@5.9.3)
 
-  '@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.3(typescript@5.9.3))':
+  '@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.3(supports-color@10.2.2)(typescript@5.9.3))(supports-color@10.2.2)':
     dependencies:
       conventional-changelog-angular: 8.3.1
       conventional-changelog-writer: 8.4.0
       conventional-commits-filter: 5.0.0
       conventional-commits-parser: 6.4.0
-      debug: 4.4.3
-      import-from-esm: 2.0.0
+      debug: 4.4.3(supports-color@10.2.2)
+      import-from-esm: 2.0.0(supports-color@10.2.2)
       lodash-es: 4.18.1
       micromatch: 4.0.8
-      semantic-release: 25.0.3(typescript@5.9.3)
+      semantic-release: 25.0.3(supports-color@10.2.2)(typescript@5.9.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -7075,21 +7079,21 @@ snapshots:
 
   '@semantic-release/error@4.0.0': {}
 
-  '@semantic-release/git@10.0.1(semantic-release@25.0.3(typescript@5.9.3))':
+  '@semantic-release/git@10.0.1(semantic-release@25.0.3(supports-color@10.2.2)(typescript@5.9.3))(supports-color@10.2.2)':
     dependencies:
       '@semantic-release/error': 3.0.0
       aggregate-error: 3.1.0
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       dir-glob: 3.0.1
       execa: 5.1.1
       lodash: 4.18.1
       micromatch: 4.0.8
       p-reduce: 2.1.0
-      semantic-release: 25.0.3(typescript@5.9.3)
+      semantic-release: 25.0.3(supports-color@10.2.2)(typescript@5.9.3)
     transitivePeerDependencies:
       - supports-color
 
-  '@semantic-release/github@12.0.8(semantic-release@25.0.3(typescript@5.9.3))':
+  '@semantic-release/github@12.0.8(semantic-release@25.0.3(supports-color@10.2.2)(typescript@5.9.3))(supports-color@10.2.2)':
     dependencies:
       '@octokit/core': 7.0.6
       '@octokit/plugin-paginate-rest': 14.0.0(@octokit/core@7.0.6)
@@ -7097,22 +7101,22 @@ snapshots:
       '@octokit/plugin-throttling': 11.0.3(@octokit/core@7.0.6)
       '@semantic-release/error': 4.0.0
       aggregate-error: 5.0.0
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       dir-glob: 3.0.1
-      http-proxy-agent: 9.0.0
-      https-proxy-agent: 9.0.0
+      http-proxy-agent: 9.0.0(supports-color@10.2.2)
+      https-proxy-agent: 9.0.0(supports-color@10.2.2)
       issue-parser: 7.0.2
       lodash-es: 4.18.1
       mime: 4.1.0
       p-filter: 4.1.0
-      semantic-release: 25.0.3(typescript@5.9.3)
+      semantic-release: 25.0.3(supports-color@10.2.2)(typescript@5.9.3)
       tinyglobby: 0.2.17
       undici: 6.27.0
       url-join: 5.0.0
     transitivePeerDependencies:
       - supports-color
 
-  '@semantic-release/npm@13.1.5(semantic-release@25.0.3(typescript@5.9.3))':
+  '@semantic-release/npm@13.1.5(semantic-release@25.0.3(supports-color@10.2.2)(typescript@5.9.3))':
     dependencies:
       '@actions/core': 3.0.1
       '@semantic-release/error': 4.0.0
@@ -7127,21 +7131,21 @@ snapshots:
       rc: 1.2.8
       read-pkg: 10.1.0
       registry-auth-token: 5.1.1
-      semantic-release: 25.0.3(typescript@5.9.3)
+      semantic-release: 25.0.3(supports-color@10.2.2)(typescript@5.9.3)
       semver: 7.8.1
       tempy: 3.2.0
 
-  '@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.3(typescript@5.9.3))':
+  '@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.3(supports-color@10.2.2)(typescript@5.9.3))(supports-color@10.2.2)':
     dependencies:
       conventional-changelog-angular: 8.3.1
       conventional-changelog-writer: 8.4.0
       conventional-commits-filter: 5.0.0
       conventional-commits-parser: 6.4.0
-      debug: 4.4.3
-      import-from-esm: 2.0.0
+      debug: 4.4.3(supports-color@10.2.2)
+      import-from-esm: 2.0.0(supports-color@10.2.2)
       lodash-es: 4.18.1
       read-package-up: 11.0.0
-      semantic-release: 25.0.3(typescript@5.9.3)
+      semantic-release: 25.0.3(supports-color@10.2.2)(typescript@5.9.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -7170,11 +7174,11 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@stylistic/eslint-plugin@5.10.0(eslint@9.39.4(jiti@2.6.1))':
+  '@stylistic/eslint-plugin@5.10.0(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))':
     dependencies:
-      '@eslint-community/eslint-utils': 4.9.1(eslint@9.39.4(jiti@2.6.1))
+      '@eslint-community/eslint-utils': 4.9.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))
       '@typescript-eslint/types': 8.62.1
-      eslint: 9.39.4(jiti@2.6.1)
+      eslint: 9.39.4(jiti@2.6.1)(supports-color@10.2.2)
       eslint-visitor-keys: 4.2.1
       espree: 10.4.0
       estraverse: 5.3.0
@@ -7202,9 +7206,9 @@ snapshots:
 
   '@types/aws-lambda@8.10.161': {}
 
-  '@types/bun@1.3.14':
+  '@types/bun@1.4.0':
     dependencies:
-      bun-types: 1.3.14
+      bun-types: 1.4.0
 
   '@types/chai@5.2.3':
     dependencies:
@@ -7262,21 +7266,25 @@ snapshots:
     dependencies:
       undici-types: 8.3.0
 
+  '@types/node@26.4.0':
+    dependencies:
+      undici-types: 8.3.0
+
   '@types/normalize-package-data@2.4.4': {}
 
   '@types/triple-beam@1.3.5': {}
 
   '@types/unist@2.0.11': {}
 
-  '@typescript-eslint/eslint-plugin@8.62.1(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)':
+  '@typescript-eslint/eslint-plugin@8.62.1(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
-      '@typescript-eslint/parser': 8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)
+      '@typescript-eslint/parser': 8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
       '@typescript-eslint/scope-manager': 8.62.1
-      '@typescript-eslint/type-utils': 8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)
-      '@typescript-eslint/utils': 8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)
+      '@typescript-eslint/type-utils': 8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
+      '@typescript-eslint/utils': 8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
       '@typescript-eslint/visitor-keys': 8.62.1
-      eslint: 9.39.4(jiti@2.6.1)
+      eslint: 9.39.4(jiti@2.6.1)(supports-color@10.2.2)
       ignore: 7.0.5
       natural-compare: 1.4.0
       ts-api-utils: 2.5.0(typescript@5.9.3)
@@ -7284,23 +7292,23 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)':
+  '@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.62.1
       '@typescript-eslint/types': 8.62.1
-      '@typescript-eslint/typescript-estree': 8.62.1(typescript@5.9.3)
+      '@typescript-eslint/typescript-estree': 8.62.1(supports-color@10.2.2)(typescript@5.9.3)
       '@typescript-eslint/visitor-keys': 8.62.1
-      debug: 4.4.3
-      eslint: 9.39.4(jiti@2.6.1)
+      debug: 4.4.3(supports-color@10.2.2)
+      eslint: 9.39.4(jiti@2.6.1)(supports-color@10.2.2)
       typescript: 5.9.3
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/project-service@8.62.1(typescript@5.9.3)':
+  '@typescript-eslint/project-service@8.62.1(supports-color@10.2.2)(typescript@5.9.3)':
     dependencies:
       '@typescript-eslint/tsconfig-utils': 8.62.1(typescript@5.9.3)
       '@typescript-eslint/types': 8.62.1
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       typescript: 5.9.3
     transitivePeerDependencies:
       - supports-color
@@ -7314,13 +7322,13 @@ snapshots:
     dependencies:
       typescript: 5.9.3
 
-  '@typescript-eslint/type-utils@8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)':
+  '@typescript-eslint/type-utils@8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)':
     dependencies:
       '@typescript-eslint/types': 8.62.1
-      '@typescript-eslint/typescript-estree': 8.62.1(typescript@5.9.3)
-      '@typescript-eslint/utils': 8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)
-      debug: 4.4.3
-      eslint: 9.39.4(jiti@2.6.1)
+      '@typescript-eslint/typescript-estree': 8.62.1(supports-color@10.2.2)(typescript@5.9.3)
+      '@typescript-eslint/utils': 8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
+      debug: 4.4.3(supports-color@10.2.2)
+      eslint: 9.39.4(jiti@2.6.1)(supports-color@10.2.2)
       ts-api-utils: 2.5.0(typescript@5.9.3)
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -7328,13 +7336,13 @@ snapshots:
 
   '@typescript-eslint/types@8.62.1': {}
 
-  '@typescript-eslint/typescript-estree@8.62.1(typescript@5.9.3)':
+  '@typescript-eslint/typescript-estree@8.62.1(supports-color@10.2.2)(typescript@5.9.3)':
     dependencies:
-      '@typescript-eslint/project-service': 8.62.1(typescript@5.9.3)
+      '@typescript-eslint/project-service': 8.62.1(supports-color@10.2.2)(typescript@5.9.3)
       '@typescript-eslint/tsconfig-utils': 8.62.1(typescript@5.9.3)
       '@typescript-eslint/types': 8.62.1
       '@typescript-eslint/visitor-keys': 8.62.1
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       minimatch: 10.2.5
       semver: 7.8.5
       tinyglobby: 0.2.17
@@ -7343,13 +7351,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/utils@8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)':
+  '@typescript-eslint/utils@8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)':
     dependencies:
-      '@eslint-community/eslint-utils': 4.9.1(eslint@9.39.4(jiti@2.6.1))
+      '@eslint-community/eslint-utils': 4.9.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))
       '@typescript-eslint/scope-manager': 8.62.1
       '@typescript-eslint/types': 8.62.1
-      '@typescript-eslint/typescript-estree': 8.62.1(typescript@5.9.3)
-      eslint: 9.39.4(jiti@2.6.1)
+      '@typescript-eslint/typescript-estree': 8.62.1(supports-color@10.2.2)(typescript@5.9.3)
+      eslint: 9.39.4(jiti@2.6.1)(supports-color@10.2.2)
       typescript: 5.9.3
     transitivePeerDependencies:
       - supports-color
@@ -7359,10 +7367,10 @@ snapshots:
       '@typescript-eslint/types': 8.62.1
       eslint-visitor-keys: 5.0.1
 
-  '@vercel/backends@0.8.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)':
+  '@vercel/backends@0.8.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(supports-color@10.2.2)':
     dependencies:
       '@vercel/build-utils': 13.26.3
-      '@vercel/nft': 1.5.0
+      '@vercel/nft': 1.5.0(supports-color@10.2.2)
       execa: 3.2.0
       fs-extra: 11.1.0
       get-port: 5.1.1
@@ -7394,9 +7402,9 @@ snapshots:
       cjs-module-lexer: 1.2.3
       es-module-lexer: 1.5.0
 
-  '@vercel/cervel@0.1.9(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)':
+  '@vercel/cervel@0.1.9(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(supports-color@10.2.2)':
     dependencies:
-      '@vercel/backends': 0.8.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)
+      '@vercel/backends': 0.8.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(supports-color@10.2.2)
     transitivePeerDependencies:
       - '@emnapi/core'
       - '@emnapi/runtime'
@@ -7411,9 +7419,9 @@ snapshots:
 
   '@vercel/detect-agent@1.2.3': {}
 
-  '@vercel/elysia@0.1.82':
+  '@vercel/elysia@0.1.82(supports-color@10.2.2)':
     dependencies:
-      '@vercel/node': 5.8.6
+      '@vercel/node': 5.8.6(supports-color@10.2.2)
       '@vercel/static-config': 3.4.0
     transitivePeerDependencies:
       - encoding
@@ -7422,11 +7430,11 @@ snapshots:
 
   '@vercel/error-utils@2.1.0': {}
 
-  '@vercel/express@0.1.92(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)':
+  '@vercel/express@0.1.92(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(supports-color@10.2.2)':
     dependencies:
-      '@vercel/cervel': 0.1.9(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)
-      '@vercel/nft': 1.5.0
-      '@vercel/node': 5.8.6
+      '@vercel/cervel': 0.1.9(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(supports-color@10.2.2)
+      '@vercel/nft': 1.5.0(supports-color@10.2.2)
+      '@vercel/node': 5.8.6(supports-color@10.2.2)
       '@vercel/static-config': 3.4.0
       fs-extra: 11.1.0
       path-to-regexp: 8.4.2
@@ -7439,20 +7447,20 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/fastify@0.1.85':
+  '@vercel/fastify@0.1.85(supports-color@10.2.2)':
     dependencies:
-      '@vercel/node': 5.8.6
+      '@vercel/node': 5.8.6(supports-color@10.2.2)
       '@vercel/static-config': 3.4.0
     transitivePeerDependencies:
       - encoding
       - rollup
       - supports-color
 
-  '@vercel/fun@1.3.0':
+  '@vercel/fun@1.3.0(supports-color@10.2.2)':
     dependencies:
       '@tootallnate/once': 2.0.1
       async-listen: 1.2.0
-      debug: 4.3.4
+      debug: 4.3.4(supports-color@10.2.2)
       generic-pool: 3.4.2
       micro: 9.3.5-canary.3
       ms: 2.1.1
@@ -7486,19 +7494,19 @@ snapshots:
 
   '@vercel/go@3.8.0': {}
 
-  '@vercel/h3@0.1.91':
+  '@vercel/h3@0.1.91(supports-color@10.2.2)':
     dependencies:
-      '@vercel/node': 5.8.6
+      '@vercel/node': 5.8.6(supports-color@10.2.2)
       '@vercel/static-config': 3.4.0
     transitivePeerDependencies:
       - encoding
       - rollup
       - supports-color
 
-  '@vercel/hono@0.2.85':
+  '@vercel/hono@0.2.85(supports-color@10.2.2)':
     dependencies:
-      '@vercel/nft': 1.5.0
-      '@vercel/node': 5.8.6
+      '@vercel/nft': 1.5.0(supports-color@10.2.2)
+      '@vercel/node': 5.8.6(supports-color@10.2.2)
       '@vercel/static-config': 3.4.0
       fs-extra: 11.1.0
       path-to-regexp: 8.4.2
@@ -7514,35 +7522,35 @@ snapshots:
       '@vercel/static-config': 3.4.0
       ts-morph: 12.0.0
 
-  '@vercel/koa@0.1.65':
+  '@vercel/koa@0.1.65(supports-color@10.2.2)':
     dependencies:
-      '@vercel/node': 5.8.6
+      '@vercel/node': 5.8.6(supports-color@10.2.2)
       '@vercel/static-config': 3.4.0
     transitivePeerDependencies:
       - encoding
       - rollup
       - supports-color
 
-  '@vercel/nestjs@0.2.86':
+  '@vercel/nestjs@0.2.86(supports-color@10.2.2)':
     dependencies:
-      '@vercel/node': 5.8.6
+      '@vercel/node': 5.8.6(supports-color@10.2.2)
       '@vercel/static-config': 3.4.0
     transitivePeerDependencies:
       - encoding
       - rollup
       - supports-color
 
-  '@vercel/next@4.17.4':
+  '@vercel/next@4.17.4(supports-color@10.2.2)':
     dependencies:
-      '@vercel/nft': 1.5.0
+      '@vercel/nft': 1.5.0(supports-color@10.2.2)
     transitivePeerDependencies:
       - encoding
       - rollup
       - supports-color
 
-  '@vercel/nft@1.10.2':
+  '@vercel/nft@1.10.2(supports-color@10.2.2)':
     dependencies:
-      '@mapbox/node-pre-gyp': 2.0.3
+      '@mapbox/node-pre-gyp': 2.0.3(supports-color@10.2.2)
       '@rollup/pluginutils': 5.4.0
       acorn: 8.17.0
       acorn-import-attributes: 1.9.5(acorn@8.17.0)
@@ -7559,9 +7567,9 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/nft@1.5.0':
+  '@vercel/nft@1.5.0(supports-color@10.2.2)':
     dependencies:
-      '@mapbox/node-pre-gyp': 2.0.3
+      '@mapbox/node-pre-gyp': 2.0.3(supports-color@10.2.2)
       '@rollup/pluginutils': 5.4.0
       acorn: 8.17.0
       acorn-import-attributes: 1.9.5(acorn@8.17.0)
@@ -7578,7 +7586,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/node@5.8.6':
+  '@vercel/node@5.8.6(supports-color@10.2.2)':
     dependencies:
       '@edge-runtime/node-utils': 2.3.0
       '@edge-runtime/primitives': 4.1.0
@@ -7586,7 +7594,7 @@ snapshots:
       '@types/node': 20.11.0
       '@vercel/build-utils': 13.26.3
       '@vercel/error-utils': 2.1.0
-      '@vercel/nft': 1.5.0
+      '@vercel/nft': 1.5.0(supports-color@10.2.2)
       '@vercel/static-config': 3.4.0
       async-listen: 3.0.0
       cjs-module-lexer: 1.2.3
@@ -7625,9 +7633,9 @@ snapshots:
     dependencies:
       '@vercel/python-analysis': 0.11.1
 
-  '@vercel/redwood@2.4.14':
+  '@vercel/redwood@2.4.14(supports-color@10.2.2)':
     dependencies:
-      '@vercel/nft': 1.5.0
+      '@vercel/nft': 1.5.0(supports-color@10.2.2)
       '@vercel/static-config': 3.4.0
       semver: 6.3.1
       ts-morph: 12.0.0
@@ -7636,10 +7644,10 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/remix-builder@5.8.3':
+  '@vercel/remix-builder@5.8.3(supports-color@10.2.2)':
     dependencies:
       '@vercel/error-utils': 2.1.0
-      '@vercel/nft': 1.5.0
+      '@vercel/nft': 1.5.0(supports-color@10.2.2)
       '@vercel/static-config': 3.4.0
       path-to-regexp: 8.4.2
       path-to-regexp-updated: path-to-regexp@6.3.0
@@ -7741,15 +7749,15 @@ snapshots:
 
   acorn@8.17.0: {}
 
-  agent-base@7.0.2:
+  agent-base@7.0.2(supports-color@10.2.2):
     dependencies:
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
-  agent-base@7.1.0:
+  agent-base@7.1.0(supports-color@10.2.2):
     dependencies:
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -7989,9 +7997,9 @@ snapshots:
       base64-js: 1.5.1
       ieee754: 1.2.1
 
-  bun-types@1.3.14:
+  bun-types@1.4.0:
     dependencies:
-      '@types/node': 26.0.1
+      '@types/node': 26.4.0
 
   bytes@3.1.0: {}
 
@@ -8202,10 +8210,10 @@ snapshots:
     dependencies:
       compare-func: 2.0.0
 
-  conventional-changelog-cmyr-config@3.0.0:
+  conventional-changelog-cmyr-config@3.0.0(supports-color@10.2.2):
     dependencies:
       compare-func: 2.0.0
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -8228,7 +8236,7 @@ snapshots:
   conventional-commits-parser@6.4.0:
     dependencies:
       '@simple-libs/stream-utils': 1.2.0
-      meow: 13.0.0
+      meow: 13.2.0
 
   conventional-commits-parser@7.1.0:
     dependencies:
@@ -8280,11 +8288,11 @@ snapshots:
     dependencies:
       type-fest: 1.4.0
 
-  cz-conventional-changelog-cmyr@2.0.0(@types/node@26.0.1)(commitizen@4.3.2(@types/node@26.0.1)(typescript@5.9.3))(typescript@5.9.3):
+  cz-conventional-changelog-cmyr@2.0.0(@types/node@26.0.1)(commitizen@4.3.2(@types/node@26.0.1)(typescript@5.9.3))(supports-color@10.2.2)(typescript@5.9.3):
     dependencies:
       '@commitlint/load': 19.8.1(@types/node@26.0.1)(typescript@5.9.3)
       '@commitlint/types': 19.8.1
-      '@lint-md/core': 2.0.0
+      '@lint-md/core': 2.0.0(supports-color@10.2.2)
       chalk: 4.1.2
       commitizen: 4.3.2(@types/node@26.0.1)(typescript@5.9.3)
       conventional-commit-types: 3.0.0
@@ -8333,17 +8341,23 @@ snapshots:
 
   dayjs@1.11.21: {}
 
-  debug@3.2.7:
+  debug@3.2.7(supports-color@10.2.2):
     dependencies:
       ms: 2.1.3
+    optionalDependencies:
+      supports-color: 10.2.2
 
-  debug@4.3.4:
+  debug@4.3.4(supports-color@10.2.2):
     dependencies:
       ms: 2.1.2
+    optionalDependencies:
+      supports-color: 10.2.2
 
-  debug@4.4.3:
+  debug@4.4.3(supports-color@10.2.2):
     dependencies:
       ms: 2.1.3
+    optionalDependencies:
+      supports-color: 10.2.2
 
   decode-named-character-reference@1.3.0:
     dependencies:
@@ -8654,15 +8668,15 @@ snapshots:
     optionalDependencies:
       source-map: 0.6.1
 
-  eslint-config-cmyr@2.3.1(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3):
+  eslint-config-cmyr@2.3.1(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3):
     dependencies:
       '@eslint/js': 9.39.4
-      '@stylistic/eslint-plugin': 5.10.0(eslint@9.39.4(jiti@2.6.1))
-      eslint: 9.39.4(jiti@2.6.1)
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1))
+      '@stylistic/eslint-plugin': 5.10.0(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))
+      eslint: 9.39.4(jiti@2.6.1)(supports-color@10.2.2)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)
       globals: 17.7.0
-      typescript-eslint: 8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)
-      vue-eslint-parser: 10.4.1(eslint@9.39.4(jiti@2.6.1))
+      typescript-eslint: 8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
+      vue-eslint-parser: 10.4.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)
     optionalDependencies:
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -8671,36 +8685,36 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-import-resolver-node@0.3.10:
+  eslint-import-resolver-node@0.3.10(supports-color@10.2.2):
     dependencies:
-      debug: 3.2.7
+      debug: 3.2.7(supports-color@10.2.2)
       is-core-module: 2.16.2
       resolve: 2.0.0-next.7
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.13.0(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint@9.39.4(jiti@2.6.1)):
+  eslint-module-utils@2.13.0(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3))(eslint-import-resolver-node@0.3.10(supports-color@10.2.2))(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2):
     dependencies:
-      debug: 3.2.7
+      debug: 3.2.7(supports-color@10.2.2)
     optionalDependencies:
-      '@typescript-eslint/parser': 8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)
-      eslint: 9.39.4(jiti@2.6.1)
-      eslint-import-resolver-node: 0.3.10
+      '@typescript-eslint/parser': 8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
+      eslint: 9.39.4(jiti@2.6.1)(supports-color@10.2.2)
+      eslint-import-resolver-node: 0.3.10(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1)):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.9
       array.prototype.findlastindex: 1.2.6
       array.prototype.flat: 1.3.3
       array.prototype.flatmap: 1.3.3
-      debug: 3.2.7
+      debug: 3.2.7(supports-color@10.2.2)
       doctrine: 2.1.0
-      eslint: 9.39.4(jiti@2.6.1)
-      eslint-import-resolver-node: 0.3.10
-      eslint-module-utils: 2.13.0(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint@9.39.4(jiti@2.6.1))
+      eslint: 9.39.4(jiti@2.6.1)(supports-color@10.2.2)
+      eslint-import-resolver-node: 0.3.10(supports-color@10.2.2)
+      eslint-module-utils: 2.13.0(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3))(eslint-import-resolver-node@0.3.10(supports-color@10.2.2))(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)
       hasown: 2.0.4
       is-core-module: 2.16.2
       is-glob: 4.0.3
@@ -8712,7 +8726,7 @@ snapshots:
       string.prototype.trimend: 1.0.10
       tsconfig-paths: 3.15.0
     optionalDependencies:
-      '@typescript-eslint/parser': 8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)
+      '@typescript-eslint/parser': 8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
@@ -8736,14 +8750,14 @@ snapshots:
 
   eslint-visitor-keys@5.0.1: {}
 
-  eslint@9.39.4(jiti@2.6.1):
+  eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2):
     dependencies:
-      '@eslint-community/eslint-utils': 4.9.1(eslint@9.39.4(jiti@2.6.1))
+      '@eslint-community/eslint-utils': 4.9.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))
       '@eslint-community/regexpp': 4.12.2
-      '@eslint/config-array': 0.21.2
+      '@eslint/config-array': 0.21.2(supports-color@10.2.2)
       '@eslint/config-helpers': 0.4.2
       '@eslint/core': 0.17.0
-      '@eslint/eslintrc': 3.3.5
+      '@eslint/eslintrc': 3.3.5(supports-color@10.2.2)
       '@eslint/js': 9.39.4
       '@eslint/plugin-kit': 0.4.1
       '@humanfs/node': 0.16.8
@@ -8753,7 +8767,7 @@ snapshots:
       ajv: 6.15.0
       chalk: 4.1.2
       cross-spawn: 7.0.6
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       escape-string-regexp: 4.0.0
       eslint-scope: 8.4.0
       eslint-visitor-keys: 4.2.1
@@ -9126,11 +9140,11 @@ snapshots:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
-  get-uri@6.0.1:
+  get-uri@6.0.1(supports-color@10.2.2):
     dependencies:
       basic-ftp: 5.3.1
       data-uri-to-buffer: 5.0.1
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       fs-extra: 8.1.0
     transitivePeerDependencies:
       - supports-color
@@ -9294,38 +9308,38 @@ snapshots:
 
   http-parser-js@0.5.10: {}
 
-  http-proxy-agent@7.0.1:
+  http-proxy-agent@7.0.1(supports-color@10.2.2):
     dependencies:
-      agent-base: 7.1.0
-      debug: 4.4.3
+      agent-base: 7.1.0(supports-color@10.2.2)
+      debug: 4.4.3(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
-  http-proxy-agent@9.0.0:
+  http-proxy-agent@9.0.0(supports-color@10.2.2):
     dependencies:
       agent-base: 9.0.0
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
-  https-proxy-agent@7.0.3:
+  https-proxy-agent@7.0.3(supports-color@10.2.2):
     dependencies:
-      agent-base: 7.0.2
-      debug: 4.4.3
+      agent-base: 7.0.2(supports-color@10.2.2)
+      debug: 4.4.3(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
-  https-proxy-agent@7.0.6:
+  https-proxy-agent@7.0.6(supports-color@10.2.2):
     dependencies:
       agent-base: 7.1.4
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
-  https-proxy-agent@9.0.0:
+  https-proxy-agent@9.0.0(supports-color@10.2.2):
     dependencies:
       agent-base: 9.0.0
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -9368,9 +9382,9 @@ snapshots:
       parent-module: 1.0.1
       resolve-from: 4.0.0
 
-  import-from-esm@2.0.0:
+  import-from-esm@2.0.0(supports-color@10.2.2):
     dependencies:
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       import-meta-resolve: 4.2.0
     transitivePeerDependencies:
       - supports-color
@@ -9860,11 +9874,11 @@ snapshots:
 
   math-intrinsics@1.1.0: {}
 
-  mdast-util-directive@2.2.4:
+  mdast-util-directive@2.2.4(supports-color@10.2.2):
     dependencies:
       '@types/mdast': 3.0.15
       '@types/unist': 2.0.11
-      mdast-util-from-markdown: 1.3.0
+      mdast-util-from-markdown: 1.3.0(supports-color@10.2.2)
       mdast-util-to-markdown: 1.5.0
       parse-entities: 4.0.2
       stringify-entities: 4.0.4
@@ -9879,12 +9893,12 @@ snapshots:
       unist-util-is: 5.2.1
       unist-util-visit-parents: 5.1.3
 
-  mdast-util-from-markdown@1.0.0:
+  mdast-util-from-markdown@1.0.0(supports-color@10.2.2):
     dependencies:
       '@types/mdast': 3.0.15
       '@types/unist': 2.0.11
       mdast-util-to-string: 3.2.0
-      micromark: 3.0.0
+      micromark: 3.0.0(supports-color@10.2.2)
       micromark-util-decode-numeric-character-reference: 1.0.0
       micromark-util-normalize-identifier: 1.0.0
       micromark-util-symbol: 1.0.0
@@ -9894,13 +9908,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  mdast-util-from-markdown@1.3.0:
+  mdast-util-from-markdown@1.3.0(supports-color@10.2.2):
     dependencies:
       '@types/mdast': 3.0.15
       '@types/unist': 2.0.11
       decode-named-character-reference: 1.3.0
       mdast-util-to-string: 3.2.0
-      micromark: 3.0.0
+      micromark: 3.0.0(supports-color@10.2.2)
       micromark-util-decode-numeric-character-reference: 1.0.0
       micromark-util-decode-string: 1.1.0
       micromark-util-normalize-identifier: 1.0.0
@@ -9935,11 +9949,11 @@ snapshots:
       '@types/mdast': 3.0.15
       mdast-util-to-markdown: 1.3.0
 
-  mdast-util-gfm-table@1.0.7:
+  mdast-util-gfm-table@1.0.7(supports-color@10.2.2):
     dependencies:
       '@types/mdast': 3.0.15
       markdown-table: 3.0.4
-      mdast-util-from-markdown: 1.0.0
+      mdast-util-from-markdown: 1.0.0(supports-color@10.2.2)
       mdast-util-to-markdown: 1.3.0
     transitivePeerDependencies:
       - supports-color
@@ -9949,13 +9963,13 @@ snapshots:
       '@types/mdast': 3.0.15
       mdast-util-to-markdown: 1.3.0
 
-  mdast-util-gfm@2.0.2:
+  mdast-util-gfm@2.0.2(supports-color@10.2.2):
     dependencies:
-      mdast-util-from-markdown: 1.0.0
+      mdast-util-from-markdown: 1.0.0(supports-color@10.2.2)
       mdast-util-gfm-autolink-literal: 1.0.3
       mdast-util-gfm-footnote: 1.0.2
       mdast-util-gfm-strikethrough: 1.0.3
-      mdast-util-gfm-table: 1.0.7
+      mdast-util-gfm-table: 1.0.7(supports-color@10.2.2)
       mdast-util-gfm-task-list-item: 1.0.2
       mdast-util-to-markdown: 1.0.0
     transitivePeerDependencies:
@@ -10214,10 +10228,10 @@ snapshots:
 
   micromark-util-types@1.0.0: {}
 
-  micromark@3.0.0:
+  micromark@3.0.0(supports-color@10.2.2):
     dependencies:
       '@types/debug': 4.1.13
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       micromark-core-commonmark: 1.0.0
       micromark-factory-space: 1.0.0
       micromark-util-character: 1.0.0
@@ -10571,16 +10585,16 @@ snapshots:
 
   p-try@2.2.0: {}
 
-  pac-proxy-agent@7.0.1:
+  pac-proxy-agent@7.0.1(supports-color@10.2.2):
     dependencies:
       '@tootallnate/quickjs-emscripten': 0.23.0
-      agent-base: 7.0.2
-      debug: 4.4.3
-      get-uri: 6.0.1
-      http-proxy-agent: 7.0.1
-      https-proxy-agent: 7.0.6
+      agent-base: 7.0.2(supports-color@10.2.2)
+      debug: 4.4.3(supports-color@10.2.2)
+      get-uri: 6.0.1(supports-color@10.2.2)
+      http-proxy-agent: 7.0.1(supports-color@10.2.2)
+      https-proxy-agent: 7.0.6(supports-color@10.2.2)
       pac-resolver: 7.0.0
-      socks-proxy-agent: 8.0.2
+      socks-proxy-agent: 8.0.2(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -10799,16 +10813,16 @@ snapshots:
 
   proto-list@1.2.4: {}
 
-  proxy-agent@6.4.0:
+  proxy-agent@6.4.0(supports-color@10.2.2):
     dependencies:
-      agent-base: 7.0.2
-      debug: 4.4.3
-      http-proxy-agent: 7.0.1
-      https-proxy-agent: 7.0.3
+      agent-base: 7.0.2(supports-color@10.2.2)
+      debug: 4.4.3(supports-color@10.2.2)
+      http-proxy-agent: 7.0.1(supports-color@10.2.2)
+      https-proxy-agent: 7.0.3(supports-color@10.2.2)
       lru-cache: 7.14.1
-      pac-proxy-agent: 7.0.1
+      pac-proxy-agent: 7.0.1(supports-color@10.2.2)
       proxy-from-env: 1.1.0
-      socks-proxy-agent: 8.0.2
+      socks-proxy-agent: 8.0.2(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -10919,10 +10933,10 @@ snapshots:
 
   reinterval@1.1.0: {}
 
-  remark-directive@2.0.1:
+  remark-directive@2.0.1(supports-color@10.2.2):
     dependencies:
       '@types/mdast': 3.0.15
-      mdast-util-directive: 2.2.4
+      mdast-util-directive: 2.2.4(supports-color@10.2.2)
       micromark-extension-directive: 2.2.1
       unified: 10.0.0
     transitivePeerDependencies:
@@ -10935,10 +10949,10 @@ snapshots:
       micromark-extension-frontmatter: 1.1.1
       unified: 10.0.0
 
-  remark-gfm@3.0.1:
+  remark-gfm@3.0.1(supports-color@10.2.2):
     dependencies:
       '@types/mdast': 3.0.15
-      mdast-util-gfm: 2.0.2
+      mdast-util-gfm: 2.0.2(supports-color@10.2.2)
       micromark-extension-gfm: 2.0.3
       unified: 10.0.0
     transitivePeerDependencies:
@@ -10951,10 +10965,10 @@ snapshots:
       micromark-extension-math: 2.1.2
       unified: 10.0.0
 
-  remark-parse@10.0.2:
+  remark-parse@10.0.2(supports-color@10.2.2):
     dependencies:
       '@types/mdast': 3.0.15
-      mdast-util-from-markdown: 1.0.0
+      mdast-util-from-markdown: 1.0.0(supports-color@10.2.2)
       unified: 10.0.0
     transitivePeerDependencies:
       - supports-color
@@ -10965,10 +10979,10 @@ snapshots:
       mdast-util-to-markdown: 1.0.0
       unified: 10.0.0
 
-  remark@14.0.2:
+  remark@14.0.2(supports-color@10.2.2):
     dependencies:
       '@types/mdast': 3.0.15
-      remark-parse: 10.0.2
+      remark-parse: 10.0.2(supports-color@10.2.2)
       remark-stringify: 10.0.3
       unified: 10.0.0
     transitivePeerDependencies:
@@ -11163,36 +11177,36 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sandbox@2.5.6:
+  sandbox@2.5.6(supports-color@10.2.2):
     dependencies:
       '@vercel/sandbox': 1.9.0
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       zod: 4.4.3
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
       - supports-color
 
-  semantic-release-cmyr-config@1.0.2(semantic-release@25.0.3(typescript@5.9.3)):
+  semantic-release-cmyr-config@1.0.2(semantic-release@25.0.3(supports-color@10.2.2)(typescript@5.9.3))(supports-color@10.2.2):
     dependencies:
-      '@semantic-release/changelog': 6.0.3(semantic-release@25.0.3(typescript@5.9.3))
-      '@semantic-release/git': 10.0.1(semantic-release@25.0.3(typescript@5.9.3))
-      conventional-changelog-cmyr-config: 3.0.0
+      '@semantic-release/changelog': 6.0.3(semantic-release@25.0.3(supports-color@10.2.2)(typescript@5.9.3))
+      '@semantic-release/git': 10.0.1(semantic-release@25.0.3(supports-color@10.2.2)(typescript@5.9.3))(supports-color@10.2.2)
+      conventional-changelog-cmyr-config: 3.0.0(supports-color@10.2.2)
       conventional-changelog-writer: 8.4.0
-      semantic-release: 25.0.3(typescript@5.9.3)
+      semantic-release: 25.0.3(supports-color@10.2.2)(typescript@5.9.3)
     transitivePeerDependencies:
       - supports-color
 
-  semantic-release@25.0.3(typescript@5.9.3):
+  semantic-release@25.0.3(supports-color@10.2.2)(typescript@5.9.3):
     dependencies:
-      '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.3(typescript@5.9.3))
+      '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.3(supports-color@10.2.2)(typescript@5.9.3))(supports-color@10.2.2)
       '@semantic-release/error': 4.0.0
-      '@semantic-release/github': 12.0.8(semantic-release@25.0.3(typescript@5.9.3))
-      '@semantic-release/npm': 13.1.5(semantic-release@25.0.3(typescript@5.9.3))
-      '@semantic-release/release-notes-generator': 14.1.1(semantic-release@25.0.3(typescript@5.9.3))
+      '@semantic-release/github': 12.0.8(semantic-release@25.0.3(supports-color@10.2.2)(typescript@5.9.3))(supports-color@10.2.2)
+      '@semantic-release/npm': 13.1.5(semantic-release@25.0.3(supports-color@10.2.2)(typescript@5.9.3))
+      '@semantic-release/release-notes-generator': 14.1.1(semantic-release@25.0.3(supports-color@10.2.2)(typescript@5.9.3))(supports-color@10.2.2)
       aggregate-error: 5.0.0
       cosmiconfig: 9.0.1(typescript@5.9.3)
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@10.2.2)
       env-ci: 11.2.0
       execa: 9.6.1
       figures: 6.1.0
@@ -11201,7 +11215,7 @@ snapshots:
       git-log-parser: 1.2.1
       hook-std: 4.0.0
       hosted-git-info: 9.0.3
-      import-from-esm: 2.0.0
+      import-from-esm: 2.0.0(supports-color@10.2.2)
       lodash-es: 4.18.1
       marked: 15.0.0
       marked-terminal: 7.3.0(marked@15.0.0)
@@ -11352,10 +11366,10 @@ snapshots:
 
   smol-toml@1.5.2: {}
 
-  socks-proxy-agent@8.0.2:
+  socks-proxy-agent@8.0.2(supports-color@10.2.2):
     dependencies:
-      agent-base: 7.0.2
-      debug: 4.4.3
+      agent-base: 7.0.2(supports-color@10.2.2)
+      debug: 4.4.3(supports-color@10.2.2)
       socks: 2.8.9
     transitivePeerDependencies:
       - supports-color
@@ -11780,13 +11794,13 @@ snapshots:
       typed-array-buffer: 1.0.3
       typed-array-byte-offset: 1.0.4
 
-  typescript-eslint@8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3):
+  typescript-eslint@8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 8.62.1(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)
-      '@typescript-eslint/parser': 8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)
-      '@typescript-eslint/typescript-estree': 8.62.1(typescript@5.9.3)
-      '@typescript-eslint/utils': 8.62.1(eslint@9.39.4(jiti@2.6.1))(typescript@5.9.3)
-      eslint: 9.39.4(jiti@2.6.1)
+      '@typescript-eslint/eslint-plugin': 8.62.1(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3))(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
+      '@typescript-eslint/parser': 8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
+      '@typescript-eslint/typescript-estree': 8.62.1(supports-color@10.2.2)(typescript@5.9.3)
+      '@typescript-eslint/utils': 8.62.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
+      eslint: 9.39.4(jiti@2.6.1)(supports-color@10.2.2)
       typescript: 5.9.3
     transitivePeerDependencies:
       - supports-color
@@ -11901,29 +11915,29 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vercel@54.5.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2):
+  vercel@54.5.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(supports-color@10.2.2):
     dependencies:
-      '@vercel/backends': 0.8.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)
+      '@vercel/backends': 0.8.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(supports-color@10.2.2)
       '@vercel/blob': 2.4.0
       '@vercel/build-utils': 13.26.3
       '@vercel/cli-config': 0.1.2
       '@vercel/detect-agent': 1.2.3
-      '@vercel/elysia': 0.1.82
-      '@vercel/express': 0.1.92(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)
-      '@vercel/fastify': 0.1.85
-      '@vercel/fun': 1.3.0
+      '@vercel/elysia': 0.1.82(supports-color@10.2.2)
+      '@vercel/express': 0.1.92(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(supports-color@10.2.2)
+      '@vercel/fastify': 0.1.85(supports-color@10.2.2)
+      '@vercel/fun': 1.3.0(supports-color@10.2.2)
       '@vercel/go': 3.8.0
-      '@vercel/h3': 0.1.91
-      '@vercel/hono': 0.2.85
+      '@vercel/h3': 0.1.91(supports-color@10.2.2)
+      '@vercel/hono': 0.2.85(supports-color@10.2.2)
       '@vercel/hydrogen': 1.3.8
-      '@vercel/koa': 0.1.65
-      '@vercel/nestjs': 0.2.86
-      '@vercel/next': 4.17.4
-      '@vercel/node': 5.8.6
+      '@vercel/koa': 0.1.65(supports-color@10.2.2)
+      '@vercel/nestjs': 0.2.86(supports-color@10.2.2)
+      '@vercel/next': 4.17.4(supports-color@10.2.2)
+      '@vercel/node': 5.8.6(supports-color@10.2.2)
       '@vercel/prepare-flags-definitions': 0.2.1
       '@vercel/python': 6.43.3
-      '@vercel/redwood': 2.4.14
-      '@vercel/remix-builder': 5.8.3
+      '@vercel/redwood': 2.4.14(supports-color@10.2.2)
+      '@vercel/remix-builder': 5.8.3(supports-color@10.2.2)
       '@vercel/ruby': 2.4.0
       '@vercel/rust': 1.3.0
       '@vercel/static-build': 2.9.32
@@ -11932,8 +11946,8 @@ snapshots:
       form-data: 4.0.6
       jose: 5.9.6
       luxon: 3.7.2
-      proxy-agent: 6.4.0
-      sandbox: 2.5.6
+      proxy-agent: 6.4.0(supports-color@10.2.2)
+      sandbox: 2.5.6(supports-color@10.2.2)
       smol-toml: 1.5.2
       zod: 4.1.11
     transitivePeerDependencies:
@@ -12000,10 +12014,10 @@ snapshots:
     transitivePeerDependencies:
       - msw
 
-  vue-eslint-parser@10.4.1(eslint@9.39.4(jiti@2.6.1)):
+  vue-eslint-parser@10.4.1(eslint@9.39.4(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2):
     dependencies:
-      debug: 4.4.3
-      eslint: 9.39.4(jiti@2.6.1)
+      debug: 4.4.3(supports-color@10.2.2)
+      eslint: 9.39.4(jiti@2.6.1)(supports-color@10.2.2)
       eslint-scope: 9.1.2
       eslint-visitor-keys: 5.0.1
       espree: 11.2.0
